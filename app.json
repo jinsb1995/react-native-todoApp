@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "WorkHardTravelHardApp",
+    "slug": "todoapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon_siba.png",
+    "splash": {
+      "image": "./assets/splash_siba.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive_siba.png",
+        "backgroundColor": "#000000"
+      },
+      "package": "com.jinseongbae.todoapp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "description": ""
+  }
+}

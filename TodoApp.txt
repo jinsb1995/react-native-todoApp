@@ -1,0 +1,81 @@
+
+지금 이 프로젝트는 app을 휴대폰에서 동작하도록 infra세팅을 알아서 설정해주는 expo를 이용해서 진행했다.
+
+하지만 
+
+    link: https://reactnative.dev/blog/2017/03/13/introducing-create-react-native-app
+    위의 사이트를 들어가면 
+    create react native app 을 이용해 개발할 수 있다.
+
+    1. 고급 설정에 대한 자유로움, 파일 크기 등의 장점이 있지만, 
+       expo가 알아서 해주던 것을을 내가 직접 해야한다.
+    2. expo sdk에 접근할 수 있다.
+    
+
+
+
+    1. Button
+
+        click과 press를 구분한다.
+    
+
+        TouchableOpacity
+
+            - 누르는 event를 listen할 준비가 된 view의 개념이다.
+            - opacity(투명도)가 있는 이유는 애니메이션 효과가 있기 때문이다.
+            - 누르면 살짝 투명해진다.
+
+            - <TouchableOpacity activeOpacity={0}>  이러면 투명도가 0이 된다.
+
+
+        TouchableHighlight
+
+            - 요소를 클릭하면 배경색이 바뀌도록 해준다.
+            - TouchableOpacity에는 없는 underlayColor를 지정할 수 있다. 
+
+        
+        TouchableWithoutFeedback
+
+            화면의 가장 위에서 일어나는 탭 이벤트를 listen한다.
+            UI변화는 없다.
+
+
+        Pressable
+            TouchableWithoutFeedback와 거의 같다.
+            더 많은 설정을 줄 수 있다.
+            엄지손가락을 생각해서 element를 조금 크게 만들어야 한다.
+
+        HitSlope
+            요소 바깥 어디까지 탭 누르는 것을 감지할지 정한다.
+
+
+
+    2. Input
+
+        TextArea나 Input이 없고, 
+        
+        <TextInput>이 있다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
